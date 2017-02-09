@@ -3,8 +3,8 @@ console.log('in js');
 var mediaMap = { 'a':'media/other.mp3', 'b':'media/object.mp3', 'c':'media/water.mp3','d':'media/water1.mp3', 'e':'media/water2.mp3',
  'f':'media/water3.mp3', 'g':'media/object1.mp3', 'h': 'media/object2.mp3','i':'media/mechanical.mp3', 'j':'media/mechanical1.mp3',
  'k':'media/mechanical2.mp3','l':'media/mechanical3.mp3', 'm': 'media/mechanical4.mp3', 'n': 'media/object3.mp3','o':'media/mechanical5.mp3', 'p':'media/mechanical6.mp3',
- 'q':'media/other1.mp3','r':'media/water4.mp3','s':'media/other5.mp3','t':'media/object4.mp3', 'u': 'media/mechanical7.mp3','v':'media/object5.mp3',
- 'w':'media/other2.mp3','x':'media/other3.mp3','y':'media/object6','z':'media/other4.mp3'};
+ 'q':'media/other1.mp3','r':'media/water4.mp3','s':'media/other2.mp3','t':'media/object4.mp3', 'u': 'media/mechanical7.mp3','v':'media/water5.mp3',
+ 'w':'media/other3.mp3','x':'media/other4.mp3','y':'media/object5.mp3','z':'media/other5.mp3'};
 
 var keyMap   = {  13:'enter', 97:'a',98:'b',99:'c',100:'d',101:'e',102:'f', 103:'g', 
 104:'h',105:'i',106:'j',107:'k', 108:'l', 109:'m',110:'n',111:'o', 112:'p', 113:'q',
@@ -24,6 +24,8 @@ function playSound (key){
 	var audio = new Audio(link);
 	audio.play()
 }
+
+
 
 $(document).ready(function(){
 	$('div').on(
@@ -124,6 +126,8 @@ $(document).on('keypress',function(a){
 
  	if(a.which==122){
 		$('.Z').addClass('active');
- 	}	
+ 	}
+
+ 		
 
 });
