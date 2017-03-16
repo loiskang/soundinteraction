@@ -1,4 +1,5 @@
-@media only screen and (max-width: 1211px) {
+
+
 #introduction {
 	font-family: Helvetica;
 	font-size: 18pt;
@@ -24,5 +25,5 @@
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	margin-top: 90px;
-}
+
 }
